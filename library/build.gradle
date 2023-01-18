@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
@@ -14,14 +14,14 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = "$System.env.GROUP"
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 33
 
     defaultConfig {
         // applicationId "com.oguzdev.circularfloatingactionmenu.library"
         minSdkVersion 15
-        targetSdkVersion 25
-        versionCode 20180716
-        versionName "1.4.0"
+        targetSdkVersion 33
+        versionCode 20230118
+        versionName "1.5.0"
     }
     buildTypes {
         release {
@@ -29,4 +29,5 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.oguzdev.circularfloatingactionmenu.library'
 }

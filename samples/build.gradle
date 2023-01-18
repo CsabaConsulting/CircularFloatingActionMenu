@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.oguzdev.circularfloatingactionmenu.samples"
         minSdkVersion 15
-        targetSdkVersion 25
+        targetSdkVersion 33
         versionCode 3
         versionName "1.0.2"
     }
@@ -16,10 +16,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    namespace 'com.oguzdev.circularfloatingactionmenu.samples'
 }
 
 dependencies {
-    compile project(':library')
-    implementation 'com.android.support:support-v4:25.0.1'
-    implementation 'com.android.support:appcompat-v7:25.0.1'
+    implementation project(':library')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
 }

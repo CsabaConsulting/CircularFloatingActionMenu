@@ -1,9 +1,8 @@
 package com.oguzdev.circularfloatingactionmenu.samples;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,7 +15,7 @@ import android.widget.TextView;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
-public class MenuWithCustomActionButtonActivity extends ActionBarActivity {
+public class MenuWithCustomActionButtonActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,9 +52,6 @@ public class MenuWithCustomActionButtonActivity extends ActionBarActivity {
      * A placeholder fragment containing a simple view.
      */
     public static class CustomButtonDemoFragment extends Fragment {
-
-        public CustomButtonDemoFragment() {
-        }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
